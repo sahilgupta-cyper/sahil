@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "type": "module",
   "main": "electron/main.js",
-  "description": "Salon management desktop app",
-  "author": "",
+  "description": "Salon management desktop app — Hair and Nail Kingdom",
+  "author": "Hair and Nail Kingdom",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
