@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "type": "module",
   "main": "electron/main.js",
+  "description": "Salon management desktop app",
+  "author": "",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -32,7 +34,7 @@
     "productName": "Hair and Nail Kingdom",
     "files": [
       "dist/**/*",
-      "electron/main.js"
+      "electron/**/*"
     ],
     "directories": {
       "buildResources": "assets",
