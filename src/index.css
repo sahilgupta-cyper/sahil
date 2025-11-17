@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Force light mode - override all dark mode preferences */
+html {
+  color-scheme: light !important;
+}
+
+html.dark,
+html[data-theme="dark"],
+body.dark {
+  color-scheme: light !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: light !important;
+  }
+}
+
+/* Ensure all text is visible in light mode */
+body {
+  background-color: #F3F4F6 !important;
+  color: #1F2937 !important;
+}
