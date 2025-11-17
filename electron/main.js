@@ -1,9 +1,12 @@
-import { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow, nativeTheme } from 'electron';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+// Force light theme
+nativeTheme.themeSource = 'light';
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
