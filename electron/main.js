@@ -1,19 +1,16 @@
-import { app, BrowserWindow, nativeTheme } from 'electron';
+import { app, BrowserWindow } from 'electron';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Force light theme
-nativeTheme.themeSource = 'light';
-
 function createWindow() {
   const mainWindow = new BrowserWindow({
     width: 1200,
     height: 800,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.cjs'), // Optional: for more advanced features later
+      preload: path.join(__dirname, 'preload.js'), // Optional: for more advanced features later
       nodeIntegration: true,
       contextIsolation: false,
     },
